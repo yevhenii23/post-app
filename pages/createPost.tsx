@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/header';
-import Form from '../components/form';
+import Header from '../components/Header';
+import Form from '../components/Form';
 import Head from 'next/head';
 
 const CreatePost: React.FC = () => {
@@ -12,13 +12,6 @@ const CreatePost: React.FC = () => {
       </Head>
       <Header />
       <Form />
-      <style global jsx>
-        {`
-          body {
-            margin: 0px;
-          }
-        `}
-      </style>
     </div>
   );
 };

@@ -26,16 +26,11 @@ const Header: React.FC = () => {
       <UL>
         <li>
           <Link href="/">
-            <A>Main page</A>
-          </Link>
-        </li>
-        <li>
-          <Link href="/posts">
             <A>Posts</A>
           </Link>
         </li>
         <li>
-          <Link href="/createPost" as="post/new">
+          <Link href="/createPost" as="/post/new">
             <A>Create post</A>
           </Link>
         </li>

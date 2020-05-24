@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/header';
-import { useSelector, useDispatch } from 'react-redux';
+import Header from '../components/Header';
+import { useSelector } from 'react-redux';
 import Head from 'next/head';
+import { State } from '../redux/reducers/reducers';
 
 const PostPage: React.FC = () => {
-  const dispatch = useDispatch();
-  const currentPost: any = useSelector((state) => state.currentPost);
+  const currentPost = useSelector((state: State) => state.currentPost);
   return (
     <div>
       <Head>
@@ -15,13 +15,6 @@ const PostPage: React.FC = () => {
       <Header />
       <h1>{currentPost.title}</h1>
       <p>{currentPost.body}</p>
-      <style global jsx>
-        {`
-          body {
-            margin: 0px;
-          }
-        `}
-      </style>
     </div>
   );
 };
