@@ -16,7 +16,9 @@ const Paragraph = styled.p`
 
 const PostsWrapper = styled.div``;
 const Card = styled.div`
-  padding: 1rem;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
 `;
 const RedButton = styled.button`
   float: right;
